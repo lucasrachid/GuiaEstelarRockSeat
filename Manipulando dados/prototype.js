@@ -107,7 +107,12 @@ techs.pop();
 // Remover do inicio
 techs.shift();
 // Pegar somente alguns elementos da array
+console.log(techs.slice(0, 2)); // Iniciando no indice 0, indo até o indice 2
+console.log("Aqui estou fatiando o Array");
 // Remover 1 ou mais itens em qualquer posição do array
+techs.splice(1, 2); //Iniciando no indice 1, ele irá tirar 2 elementos e assim por diante
 // Encontrar a posição de um elemento no array
+let index = techs.indexOf("CSS"); //Está aparecendo -1, porque na linha acima foi retirado CSS do techs
+console.log(index);
 
 console.log(techs);
